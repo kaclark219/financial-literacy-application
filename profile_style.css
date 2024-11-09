@@ -1,3 +1,4 @@
+/* copy starting here */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -36,8 +37,6 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-
-
 body {
     background-color: #E8E8E8;
 }
@@ -53,4 +52,37 @@ body {
         font-weight: 700;
         padding-top: 45px;
     }
+}
+/* copy ending here */
+
+.profile {
+	display: flex;
+	margin-top: 15px;
+	justify-content: center;
+	position: relative;
+	.settings {
+		position: absolute;
+		right: 0;
+		padding-right: 20px;
+		img {
+			width: 30px;
+			height: 30px;
+		}
+	}
+	.steve {
+		img {
+			height: 100px;
+			width: 100px;
+			border-radius: 100%;
+		}
+	}
+}
+.name {
+	color: black;
+	font-family: "Open Sans";
+	font-size: 32px;
+	font-weight: 400;
+	display: flex;
+	justify-content: center;
+	margin-bottom: 20px;
 }
