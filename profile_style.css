@@ -39,6 +39,7 @@ table {
 }
 body {
     background-color: #E8E8E8;
+	font-family: "Open Sans", sans-serif;
 }
 .header {
     background: #71BE74;
@@ -47,7 +48,6 @@ body {
     h1 {
         color: black;
         text-align: center;
-        font-family: "Open Sans", sans-serif;
         font-size: 20px;
         font-weight: 700;
         padding-top: 45px;
@@ -79,10 +79,48 @@ body {
 }
 .name {
 	color: black;
-	font-family: "Open Sans";
 	font-size: 32px;
 	font-weight: 400;
 	display: flex;
 	justify-content: center;
 	margin-bottom: 20px;
+}
+
+h3 {
+	font-size: 20px;
+	font-weight: 700;
+}
+.budget-summary-grid {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	.first-row {
+		padding: 15px;
+		background-color: white;
+		width: 320px;
+		height: 90px;
+		border-radius: 15px;
+		position: relative;
+		p {
+			margin-top: 10px;
+			font-size: 16px;
+			b {
+				font-weight: 700;
+				font-size: 24px;
+			}
+		}
+		button {
+			position: absolute;
+			right: 20px;
+			margin-top: 10px;
+			background-color: black;
+			color: white;
+			border-radius: 5px;
+			font-weight: 700;
+			padding: 5px 10px;
+			&:hover, &:focus {
+				background-color: #333;
+			}
+		}
+	}
 }
