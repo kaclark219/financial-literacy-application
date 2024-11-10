@@ -76,3 +76,69 @@ body {
 	}
 }
 /* copy ending here */
+p {
+	color: var(--color);
+	margin-bottom:5px;
+}
+.categories-container {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 20px;
+	padding: 10px;
+	max-width: 370px;
+	max-height: 669px;
+}
+
+.category-card {
+	background-color: #ffffff;
+	border-radius: 8px;
+	padding: 10px;
+	text-align: center;
+	font-size: 1.2em;
+	--color: #000000; /* Default color for category */
+}
+  
+.category-icon {
+	width: 50px;
+	height: 50px;
+	margin-bottom: 10px;
+	fill: var(--color);
+}
+
+.category-button {
+  background-color: var(--color);
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 5px;
+  width: 150px;
+  height:25px;
+}
+
+button:hover {
+	background-image: linear-gradient(rgb(0 0 0/30%) 0 0);
+}
+
+.new-category {
+	button {
+		margin: 10px;
+		background-color: white;
+		width: 370px;
+		height: 45px;
+		border-radius: 10px;
+		font-size: 18px;
+		font-weight: 600;
+		border-radius: 10px;
+		border: none;
+		display: flex;
+		align-items: center;
+		cursor: pointer;
+		img {
+			margin-left: 15px;
+			margin-right: 10px;
+			width: 35px;
+			height: 35px;
+		}
+	}
+}
