@@ -6,6 +6,7 @@ function replaceGoalContent(new_goal, goal_details, num_stars) {
             checkGoals[i] = true;
             let goal = document.querySelector(`.goal-info.goal${i + 1}`);
             goal.querySelector("h1").innerText = new_goal;
+            goal.querySelector("h1").style.textDecoration = "none";
             goal.querySelector("p").innerText = goal_details;
             const star_1 = document.querySelector(`.goal${i + 1}_star1 svg path`);
             const star_2 = document.querySelector(`.goal${i + 1}_star2 svg path`);

@@ -7,7 +7,14 @@
     <link rel="stylesheet" href="goals_style.css">
     <script src="goals.js" defer></script>
 
-</head> 
+</head>
+
+<script>
+    function crossOutGoal(i) {
+        let goal = document.querySelector(`.goal-info.goal${i}`);
+        goal.querySelector("h1").style.textDecoration = "line-through";
+    }
+</script>
 <body>
     <div class="header">
         <h1>Goals</h1>
@@ -34,7 +41,7 @@
             </div>
             <div class="goal-button">
                 <button>Update Progress</button>
-                <button>Complete Goal</button>
+                <button onclick="crossOutGoal(1)">Complete Goal</button>
             </div>
         </div>
     </div>
@@ -60,7 +67,7 @@
         </div>
         <div class="goal-button">
             <button>Update Progress</button>
-            <button>Complete Goal</button>
+            <button onclick="crossOutGoal(2)">Complete Goal</button>
         </div>
     </div>
 
@@ -85,7 +92,7 @@
         </div>
         <div class="goal-button">
             <button>Update Progress</button>
-            <button>Complete Goal</button>
+            <button onclick="crossOutGoal(3)">Complete Goal</button>
         </div>
     </div>
 
@@ -110,7 +117,7 @@
         </div>
         <div class="goal-button">
             <button>Update Progress</button>
-            <button>Complete Goal</button>
+            <button onclick="crossOutGoal(4)">Complete Goal</button>
         </div>
     </div>
 
