@@ -193,6 +193,7 @@ button:hover {
 	justify-self: center;
 	button {
 		margin: 10px;
+		margin-bottom: 15px;
 		background-color: white;
 		width: 370px;
 		height: 45px;

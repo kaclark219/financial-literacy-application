@@ -124,6 +124,7 @@ button:hover {
 .new-category {
 	button {
 		margin: 10px;
+		margin-bottom: 23px;
 		background-color: white;
 		width: 370px;
 		height: 45px;
