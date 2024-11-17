@@ -5,7 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Profile</title>
     <link rel="stylesheet" href="profile_style.css">
-</head> 
+</head>
+<script>
+    let starCount = 15;
+    let rewardsCompleted = [false, false];
+    function decrementStarCount(num, index) {
+        starCount -= num;
+        rewardsCompleted[index] = true;
+    }
+    function crossOutReward(index) {
+        if (rewardsCompleted[index]) {
+            document.querySelectorAll(".left-reward")[index - 1].style.textDecoration = "line-through";
+        }
+    }
+    function updateStarCount(num, index) {
+        decrementStarCount(num, index);
+        crossOutReward(index);
+        document.querySelector(".number-stars").innerHTML = starCount;
+    }
+</script>
 <body>
     <div class="header">
         <h1>My Profile</h1>
@@ -25,7 +43,7 @@
         </div>
         <div class="second-row">
             <div class="left">
-                <p class="number-stars">0</p>
+                <p class="number-stars">15</p>
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 245">
                     <path d="m56,237 74-228 74,228L10,96h240"/>
                     </svg>
@@ -50,7 +68,7 @@
                         </svg>
                     <p>5</p>
                 </div>
-                <button>Redeem</button>
+                <button onclick="updateStarCount(5,1)">Redeem</button>
             </div>
         </div>
         <div class="reward">
@@ -64,7 +82,7 @@
                         </svg>
                     <p>10</p>
                 </div>
-                <button>Redeem</button>
+                <button onclick="updateStarCount(10,2)">Redeem</button>
             </div>
         </div>
         <div class="new-reward">
