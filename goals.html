@@ -5,27 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Goals</title>
     <link rel="stylesheet" href="goals_style.css">
+    <script src="goals.js" defer></script>
+
 </head> 
 <body>
     <div class="header">
         <h1>Goals</h1>
     </div>
     <div class="goal-box">
-        <div class="goal-info">
+        <div class="goal-info goal1">
             <h1>Spend less on gifts for Alex.</h1>
             <p>1-3 Weeks | Spending</p>
         </div>
         <div class="buttonstar">
             <div class="star-container">
-                <div class="star"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 245">
+                <div class="star goal1_star1"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 245">
                     <path d="m56,237 74-228 74,228L10,96h240"/>
                     </svg>
                 </div>
-                <div class="star"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 245">
+                <div class="star goal1_star2"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 245">
                     <path d="m56,237 74-228 74,228L10,96h240"/>
                     </svg>
                 </div>
-                <div class="star"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 245">
+                <div class="star goal1_star3"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 245">
                     <path d="m56,237 74-228 74,228L10,96h240"/>
                     </svg>
                 </div>
@@ -38,16 +40,20 @@
     </div>
 
     <div class="goal-box">
-        <div class="goal-info">
+        <div class="goal-info goal2">
             <h1>Do <b>not</b> buy sugarcane.</h1>
             <p> < 1 Week | Spending</p>
         </div>
         <div class="star-container">
-            <div class="star"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 245">
+            <div class="star goal2_star1"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 245">
                 <path d="m56,237 74-228 74,228L10,96h240"/>
                 </svg>
             </div>
-            <div class="star"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 245">
+            <div class="star goal2_star2"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 245">
+                <path d="m56,237 74-228 74,228L10,96h240"/>
+                </svg>
+            </div>
+            <div class="star goal2_star3"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 245">
                 <path d="m56,237 74-228 74,228L10,96h240"/>
                 </svg>
             </div>
@@ -59,16 +65,20 @@
     </div>
 
     <div class="goal-box">
-        <div class="goal-info">
+        <div class="goal-info goal3">
             <h1>Spend less than $40 on Redstone this month.</h1>
             <p>1 Month+ | Budgeting</p>
         </div>
         <div class="star-container">
-            <div class="star"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 245">
+            <div class="star goal3_star1"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 245">
                 <path d="m56,237 74-228 74,228L10,96h240"/>
                 </svg>
             </div>
-            <div class="star"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 245">
+            <div class="star goal3_star2"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 245">
+                <path d="m56,237 74-228 74,228L10,96h240"/>
+                </svg>
+            </div>
+            <div class="star goal3_star3"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 245">
                 <path d="m56,237 74-228 74,228L10,96h240"/>
                 </svg>
             </div>
@@ -80,12 +90,20 @@
     </div>
 
     <div class="goal-box">
-        <div class="goal-info">
+        <div class="goal-info goal4">
             <h1>Save $100 a week for house renovations.</h1>
             <p>1 Month+ | Saving</p>
         </div>
         <div class="star-container">
-            <div class="star"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 245">
+            <div class="star goal4_star1"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 245">
+                <path d="m56,237 74-228 74,228L10,96h240"/>
+                </svg>
+            </div>
+            <div class="star goal4_star2"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 245">
+                <path d="m56,237 74-228 74,228L10,96h240"/>
+                </svg>
+            </div>
+            <div class="star goal4_star3"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 245">
                 <path d="m56,237 74-228 74,228L10,96h240"/>
                 </svg>
             </div>
@@ -129,13 +147,13 @@
             }
         </script>
         <h2 style="margin-top: 15px;"> Or choose from a pre-made goal below: </h2>
-        <img src="assets/addgoal.png">
+        <img src="assets/addgoal.png" id="10-into-savings">
             <h2 style="margin-left: 40px; margin-top: -30px;"> Put $10 per week into savings. </h2>
             <p style="margin-left: 40px;"> 1-3 Weeks | Saving | Medium Priority</p>
-        <img src="assets/addgoal.png">
+        <img src="assets/addgoal.png" id="20-eating-out">
             <h2 style="margin-left: 40px; margin-top: -30px;"> Spend <$20 Eating Out. </h2>
             <p style="margin-left: 40px;"> < 1 Week | Budgeting | High Priority</p>
-        <img src="assets/addgoal.png">
+        <img src="assets/addgoal.png" id="no-unnecessary">
             <h2 style="margin-left: 40px; margin-top: -30px;"> Do not buy unnecessary things. </h2>
             <p style="margin-left: 40px;"> 1 Month+ | Spending | Low Priority</p>
     </div>
