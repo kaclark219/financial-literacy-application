@@ -21,6 +21,7 @@ time, mark, audio, video {
 }
 body {
 	line-height: 1;
+	justify-self: center;
 }
 ol, ul {
 	list-style: none;
@@ -76,7 +77,7 @@ body {
 	}
 }
 /* copy ending here */
-p {
+.category-name {
 	color: var(--color);
 	margin-bottom:5px;
 }
@@ -105,7 +106,7 @@ p {
 	fill: var(--color);
 }
 
-.category-button {
+.category-button, .change-color-btn {
   background-color: var(--color);
   color: #fff;
   border: none;
@@ -141,4 +142,117 @@ button:hover {
 			height: 35px;
 		}
 	}
+}	
+
+/* Modal styles */
+.modal {
+	display: none; /* Hidden by default */
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: #71BE74;
+	padding: 20px;
+	border-radius: 8px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+	z-index: 1000;
+	width:250px;
 }
+
+.modal-content {
+	text-align: center;
+}
+
+#colorPicker {
+	width: 100px;
+	height: 40px;
+	border: none;
+	margin: 10px 0;
+}
+
+.modal button {
+	margin: 5px;
+	padding: 10px 20px;
+	cursor: pointer;
+}
+
+#closeModal {
+	img {
+		width:20px;
+		height:20px;
+	}
+	cursor: pointer;
+	position: absolute;
+	top: -5px;
+	right: -5px;
+	background: none;
+	border: none;
+}
+
+.modal h3 {
+	font-weight: bold;
+}
+
+#applyColor {
+	background-color: #000000;
+	color: #fff;
+	border: none;
+	border-radius: 4px;
+}
+
+#closeAddCategoryModal, #closeCustomCategoryModal, #closeExpenseModal {
+	img {
+		width:20px;
+		height:20px;
+	}
+	cursor: pointer;
+	position: absolute;
+	top: -5px;
+	right: -5px;
+	background: none;
+	border: none;
+}
+  
+#createCategory {
+	background-color:black;
+	color: #fff;
+	border: none;
+	border-radius: 4px;
+}
+
+#addEatingOut, #addTransportation, #addSelfCare {
+	padding: 0;
+	display:flex;
+  	align-items: center;
+  	justify-content: center;
+	margin-bottom:10px;
+	img {
+		height: 30px; 
+		width: 30px;
+		margin-right:15px;
+	}
+	cursor: pointer;
+	background: none;
+	border: none;
+	font-size: 15px;
+}
+
+/* Form Styles */
+
+form input,
+form select {
+	padding: 3px;
+	margin-bottom: 15px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+}
+
+form button {
+	padding: 10px;
+	background-color: black;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+  
