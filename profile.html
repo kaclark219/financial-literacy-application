@@ -5,22 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Profile</title>
     <link rel="stylesheet" href="profile_style.css">
+    <script src="profile.js" defer></script>
 </head>
 <script>
     let starCount = 15;
-    let rewardsCompleted = [false, false];
     function decrementStarCount(num, index) {
         starCount -= num;
-        rewardsCompleted[index] = true;
     }
-    function crossOutReward(index) {
-        if (rewardsCompleted[index]) {
-            document.querySelectorAll(".left-reward")[index - 1].style.textDecoration = "line-through";
-        }
-    }
+    // function crossOutReward(index) {
+    //     document.querySelectorAll(".left-reward")[index - 1].style.textDecoration = "line-through";
+    // }
     function updateStarCount(num, index) {
         decrementStarCount(num, index);
-        crossOutReward(index);
+        // crossOutReward(index);
         document.querySelector(".number-stars").innerHTML = starCount;
     }
 </script>
@@ -57,7 +54,7 @@
         <div class="rewards-header">
             <h3>Rewards</h3>
         </div>
-        <div class="reward">
+        <div class="reward r1">
             <div class="left-reward">
                 <p>Play Minecraft for 3 hours!</p>
             </div>
@@ -71,7 +68,7 @@
                 <button onclick="updateStarCount(5,1)">Redeem</button>
             </div>
         </div>
-        <div class="reward">
+        <div class="reward r2">
             <div class="left-reward">
                 <p>Treat myself to some sugarcane!</p>
             </div>
@@ -86,9 +83,72 @@
             </div>
         </div>
         <div class="new-reward">
-            <button><img src="assets/hand-with-star-icon.png" alt="hand with star">Add New Reward</button>
+            <button onclick="showPGoal()"><img src="assets/hand-with-star-icon.png" alt="hand with star">Add New Reward</button>
         </div>
     </div>
+
+    <script>
+        function showPGoal() {
+            var x = document.getElementById("newgoal-premade");
+            x.style.display = "flex";
+        }
+    </script>
+    
+    <div class="newgoal-premade" id="newgoal-premade">
+        <span class="close"><btn onclick="closePGoal()"><img src="assets/close.webp"></btn></span>
+        <script>
+            function closePGoal() {
+                var x = document.getElementById("newgoal-premade");
+                x.style.display = "none";
+            }
+        </script>
+        <h1> New Reward </h1>
+        <button onclick="showNGoal()"> Add Custom Reward </button>
+        <script>
+            function showNGoal() {
+                var x = document.getElementById("newgoal-popup");
+                x.style.display = "flex";
+            }
+        </script>
+        <h2 style="margin-top: 15px;"> Or choose from a pre-made reward below: </h2>
+        <img src="assets/addgoal.png" id="coffee">
+            <h2 style="margin-left: 40px; margin-top: -30px;"> Treat myself to a coffee. </h2>
+            <p style="margin-left: 40px;"> 3 Stars</p>
+        <img src="assets/addgoal.png" id="trip">
+            <h2 style="margin-left: 40px; margin-top: -30px;"> Go on a trip with a friend. </h2>
+            <p style="margin-left: 40px;"> 20 Stars</p>
+        <img src="assets/addgoal.png" id="walk">
+            <h2 style="margin-left: 40px; margin-top: -30px;"> Go on a nice walk. </h2>
+            <p style="margin-left: 40px;"> 1 Star</p>
+    </div>
+    <script>
+        var x = document.getElementById("newgoal-premade");
+        x.style.display = "none";
+    </script>
+    <div class="newgoal-popup" id="newgoal-popup">
+        <span class="close"><btn onclick="closeGoal()"><img src="assets/close.webp" style="margin-right:5px; margin-top: 15px; "></btn></span>
+        <script>
+            function closeGoal() {
+                var x = document.getElementById("newgoal-popup");
+                x.style.display = "none";
+                var y = document.getElementById("newgoal-premade");
+                y.style.display = "none";
+            }
+        </script>
+        <h1>New Reward</h1>
+        <h2>Reward Description:</h2>
+        <input placeholder="Type here!"></input>
+        <h2>Star Cost:</h2>
+        <input placeholder="Put a number here!"></input>
+        <button id="add-custom-goal">Add Reward</button>
+    </div> 
+    <script>
+        var x = document.getElementById("newgoal-popup");
+        x.style.display = "none";
+    </script>
+
+
+
     <div class="footer">
         <a href="overview.html">
             <img src="assets/overview.png" alt="overview icon">
