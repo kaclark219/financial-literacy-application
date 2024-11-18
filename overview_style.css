@@ -90,13 +90,16 @@ body {
     margin-top: 15px;
     margin-bottom: 20px;
 	margin-left: 15px;
+    p {
+        font-weight: 600;
+    }
 }
 
 .pie-chart {
 	width: 200px;
 	height: 200px;
-	background-image: conic-gradient(darkblue 60%, darkorange 60%, darkorange 75%, green 75%, 
-	green 87%, darkred 87%, darkred 96%, purple 96%, purple 100%);
+	background-image: conic-gradient(#1F77B4 60%, #FF7F0E 60%, #FF7F0E 75%, #2CA02C 75%, 
+	#2CA02C 87%, #D62728 87%, #D62728 96%, #9467BD 96%, #9467BD 100%);
 	border-radius: 50%;
 	position: relative;
 }
@@ -136,6 +139,9 @@ body {
     font-size: 14.5px;
     font-weight: bold;
     margin-left: 15px;
+    p {
+        font-weight: 400;
+    }
 }
 
 .spending-item-tile {
