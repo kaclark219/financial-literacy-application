@@ -4,6 +4,7 @@
 body {
   font-size: 14px;
   justify-self: center;
+  background: rgba(231,231,231,1);
 }
 .v1_2 { 
   /* gray background */
