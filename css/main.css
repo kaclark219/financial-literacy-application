@@ -75,7 +75,7 @@ body {
   /* Learning tab on bottom */
   width: 62px;
   height: 62px;
-  background: url("../images/v1_8.png");
+  background: url("../assets/learning.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -100,7 +100,7 @@ body {
 .v1_10 {
   width: 62px;
   height: 62px;
-  background: url("../images/v1_10.png");
+  background: url("../assets/categories.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -123,10 +123,10 @@ body {
   text-align: left;
 }
 .v1_12 {
-  /* categories tab */
+  /* overview tab */
   width: 62px;
   height: 62px;
-  background: url("../images/v1_12.png");
+  background: url("../assets/overview.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -152,7 +152,7 @@ body {
   /* goals tab */
   width: 62px;
   height: 62px;
-  background: url("../images/v1_14.png");
+  background: url("../assets/goals.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -178,7 +178,7 @@ body {
   /* profile tab */
   width: 62px;
   height: 62px;
-  background: url("../images/v1_16.png");
+  background: url("../assets/profile.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
