@@ -3,6 +3,7 @@
 }
 body {
   font-size: 14px;
+  justify-self: center;
 }
 .v1_2 { 
   /* gray background */
