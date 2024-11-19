@@ -16,8 +16,8 @@ body {
   overflow: hidden;
 }
 .v1_3 {
-  width: 236px;
-  height: 439px;
+  width: 240px;
+  height: 442px;
   background: url("../images/lines.png");
   opacity: 1;
   position: absolute;
@@ -248,7 +248,7 @@ body {
   opacity: 1;
   position: absolute;
   top: 461px;
-  left: 250px;
+  left: 265px;
   border: 4px solid rgba(112,190,115,1);
   border-top-left-radius: 9px;
   border-top-right-radius: 9px;
@@ -323,7 +323,7 @@ body {
   opacity: 1;
   position: absolute;
   top: 582px;
-  left: 156px;
+  left: 240px;
   border: 4px solid rgba(112,190,115,1);
   border-top-left-radius: 9px;
   border-top-right-radius: 9px;
@@ -412,8 +412,8 @@ body {
   width: 88px;
   color: rgba(0,0,0,1);
   position: absolute;
-  top: 659px;
-  left: 149px;
+  left: 3px;
+  top: 64px;
   font-family: Open Sans;
   font-weight: SemiBold;
   font-size: 12px;
@@ -424,8 +424,8 @@ body {
   width: 88px;
   color: rgba(0,0,0,1);
   position: absolute;
-  top: 648px;
-  left: 59px;
+  left: 3px;
+  top: 60px;
   font-family: Open Sans;
   font-weight: SemiBold;
   font-size: 12px;
@@ -507,45 +507,46 @@ body {
   left: 3px;
 }
 .v1_43 {
-  width: 57px;
-  height: 57px;
-  background: rgba(255,255,255,1);
+  width: 54px;
+  height: 54px;
+  /* background: rgba(255,255,255,1); */
   opacity: 1;
   position: absolute;
-  top: 591px;
-  left: 73px;
+  top: 4px;
+  left: 14px;
   overflow: hidden;
 }
 .v1_44 {
   /* retirement funds image */
-  width: 42px;
-  height: 42px;
-  background: url("../images/v1_44.png");
+  width: 44px;
+  height: 44px;
+  background: url("../images/retirement.png");
+  background-size: cover;
   opacity: 1;
   position: absolute;
   top: 7px;
-  left: 8px;
-  border: 2px solid rgba(0,0,0,1);
+  left: 10px;
 }
 .v1_45 {
   width: 57px;
   height: 57px;
-  background: rgba(255,255,255,1);
+  /* background: rgba(255,255,255,1); */
   opacity: 1;
   position: absolute;
-  top: 598px;
-  left: 134px;
+  top: 10px;
+  left: 22px;
   overflow: hidden;
 }
 .v1_46 {
-  width: 47px;
-  height: 47px;
-  background: url("../images/v1_46.png");
+  /* investing image */
+  width: 42px;
+  height: 42px;
+  background: url("../images/investing.png");
+  background-size: cover;
   opacity: 1;
   position: absolute;
   top: 4px;
   left: 4px;
-  border: 2px solid rgba(0,0,0,1);
 }
 .v1_47 {
   width: 56px;
@@ -576,19 +577,21 @@ body {
   /* background: rgba(255,255,255,1); */
   opacity: 1;
   position: absolute;
+  top: 4px;
+  left: 18px;
   /* top: 471px;
   left: 106px; */
   overflow: hidden;
 }
 .v1_50 {
-  width: 47px;
-  height: 38px;
-  background: url("../images/v1_50.png");
+  width: 50px;
+  height: 50px;
+  background: url("../images/cash.png");
+  background-size: cover;
   opacity: 1;
   position: absolute;
   top: 9px;
   left: 4px;
-  border: 2px solid rgba(0,0,0,1);
 }
 .v1_51 {
   width: 101px;
@@ -705,7 +708,6 @@ body {
   left: -35px;
   top: 502px;
   color: rgba(112,190,115,1);
-  position: absolute;
   font-family: Open Sans;
   font-weight: SemiBold;
   font-size: 12px;
@@ -714,19 +716,25 @@ body {
   transform: rotate(-90deg);
 }
 .v1_60 {
-  width: 101px;
-  color: rgba(112,190,115,1);
+  /* financial assets green */
   position: absolute;
-  top: 684px;
-  left: 27px;
+  width: 101px;
+  height: 21px;
+  left: -12px;
+  top: 623px;
+  color: rgba(112,190,115,1);
   font-family: Open Sans;
   font-weight: SemiBold;
   font-size: 12px;
+  line-height: 16px;
   opacity: 1;
   text-align: center;
-  transform: rotate(-89deg);
+  transform: rotate(-90deg);
 }
 .name {
+  color: #fff;
+}
+/* .name {
   color: #fff;
 }
 .name {
@@ -803,7 +811,4 @@ body {
 }
 .name {
   color: #fff;
-}
-.name {
-  color: #fff;
-}
+} */
